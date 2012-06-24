@@ -33,7 +33,7 @@ var MiniBookId = $("#MiniBookId").closest("div.span4"),tag = $("#tag").closest("
 tag.after(BookName);
 $('fieldset.col22').next('fieldset').andSelf().add('fieldset.col21').css({width:'30%',float:'left',margin:'0 1%'});
 $('#btn-publish').closest('div.form-actions').css({textAlign:'right'});
-var close = $("<span title='返回' style='position: absolute;display: block;width: 20px; height: 20px;line-height: 20px; background:#666; color: #fff;text-align:center; right: 20px;top:35px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;'>X</span>");
+var close = $("<span title='返回' style='position: absolute;display: block;cursor:point;width: 20px; height: 20px;line-height: 20px; background:#666; color: #fff;text-align:center; right: 20px;top:35px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;'>X</span>");
 close.bind('click',function(){
     $('#header,div#main>div.row>div.span3,#footer').show();
     $('div.page,#wmd-editor,div.resizable-textarea,#Subject,#wmd-preview,#wmd-input,div.resizable,div#main>div.row>div.span9,div.grippie').removeAttr('style');
