@@ -19,6 +19,7 @@
  * div.grippie 大小调整条 margin-right: 9px; 改为0
  * #btn-publish 发布按钮，居右对齐
  * #MiniBookId 合集  #tag 标签  #BookName 相关图书
+ * #char-count 字数统计
  */
 $('#header,div#main>div.row>div.span3,#footer').hide();
 $('div.page').css({width:'auto',margin:'0 20px'});
@@ -27,6 +28,7 @@ $('div.resizable-textarea').eq(1).css({width:'48%',float:'right'});
 $('div#main>div.row>div.span9').css({width:'96%',margin:'0 2%'});
 $('#Subject').width('100%');
 $('#wmd-input').css({width:'100%',height:'320px'});
+$("#char-count").css({right:"10px",top;"5px"});
 $('div.resizable').css({width:'100%',height:'320px',marginTop:'50px',padding:"0 10px"});
 $('div.grippie').css({width:'100%',marginRight:'0'});
 var MiniBookId = $("#MiniBookId").closest("div.span4"),tag = $("#tag").closest("div.span5"),BookName = $("#BookName").closest("div.span4");
@@ -36,7 +38,7 @@ $('#btn-publish').closest('div.form-actions').css({textAlign:'right'});
 var close = $("<span title='返回' style='position: absolute;display: block;cursor:point;width: 20px; height: 20px;line-height: 20px; background:#666; color: #fff;text-align:center; right: 20px;top:35px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;'>X</span>");
 close.bind('click',function(){
     $('#header,div#main>div.row>div.span3,#footer').show();
-    $('div.page,#wmd-editor,div.resizable-textarea,#Subject,#wmd-preview,#wmd-input,div.resizable,div#main>div.row>div.span9,div.grippie').removeAttr('style');
+    $('div.page,#wmd-editor,#char-count,div.resizable-textarea,#Subject,#wmd-preview,#wmd-input,div.resizable,div#main>div.row>div.span9,div.grippie').removeAttr('style');
     $('#Subject').width('689px');
     $('div.grippie').css({marginRight:'9px'});
 	MiniBookId.parent().next().append(BookName);
