@@ -28,7 +28,7 @@ $('div.resizable-textarea').eq(1).css({width:'48%',float:'right'});
 $('div#main>div.row>div.span9').css({width:'96%',margin:'0 2%'});
 $('#Subject').width('100%');
 $('#wmd-input').css({width:'100%',height:'320px'});
-$("#char-count").css({right:"10px",top:"5px"});
+$("#char-count").css({right:"10px",top:"85px"});
 $('div.resizable').css({width:'100%',height:'320px',marginTop:'50px',padding:"0 10px"});
 $('div.grippie').css({width:'100%',marginRight:'0'});
 var MiniBookId = $("#MiniBookId").closest("div.span4"),tag = $("#tag").closest("div.span5"),BookName = $("#BookName").closest("div.span4");
